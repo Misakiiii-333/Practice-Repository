@@ -6,3 +6,5 @@ if($age= 20){
 }else{
  echo("child");
 }
+
+?>
