@@ -1,6 +1,6 @@
 <?php
 
-function cal($x,$y){
+function cal($x,$y) {
     return $x / $y ;
 }
 
