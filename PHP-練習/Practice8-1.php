@@ -1,5 +1,5 @@
 <?php
- class Student{
+ class Student {
 
     public $name;
 
