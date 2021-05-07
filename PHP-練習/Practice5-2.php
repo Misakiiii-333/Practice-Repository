@@ -5,3 +5,5 @@ function cal($x,$y){
 };
 
 cal(6,3);
+
+?>
