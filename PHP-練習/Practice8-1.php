@@ -12,3 +12,5 @@ $a001 = new Student();
 $a001->avg(80,70);
 $a001->name = "sato";
 echo $a001->name."\n";
+
+?>
