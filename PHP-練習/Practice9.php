@@ -4,13 +4,13 @@
 
     public $name;
 
-    public function __construct($name){
+    public function __construct($name) {
         $this ->name = $name;
     }
   
     function cal_avg($data) {
         $sum = 0;
-        for($i = 0; $i < count($data); $i++){
+        for($i = 0; $i < count($data); $i++) {
          $sum += $data[$i];
         }
         $avg = $sum / count($data);
@@ -19,7 +19,7 @@
 
     function judge($avg) {
         $result;
-        if(60 <= $avg){
+        if(60 <= $avg) {
             $result = "passed";
         } else {
             $result = "failed";
@@ -37,3 +37,4 @@
   echo $avg."\n";
   echo $result."\n";
 
+?>
