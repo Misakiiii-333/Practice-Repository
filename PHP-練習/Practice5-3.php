@@ -6,3 +6,5 @@ function cal($x,$y){
 
 $result = cal(6,3);
 echo $result."\n";
+
+?>
