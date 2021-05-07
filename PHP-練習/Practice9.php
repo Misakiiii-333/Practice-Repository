@@ -1,7 +1,5 @@
 <?php
-
- class Student {
-
+class Student {
     public $name;
 
     public function __construct($name) {
