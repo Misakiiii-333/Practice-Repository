@@ -2,8 +2,8 @@
 //Solving Algorithm's homework(1) in a different way.
 
 function largest_pair($arr, $n) {
-    $min = PHP_INT_MAX;
-    $secondMin = PHP_INT_MAX;
+    $max = PHP_INT_MAX;
+    $secondMax = PHP_INT_MAX;
     for ($j = 0; $j < $n; $j++) {
         if ($arr[$j] > $max) {
             $secondMax = $max;
