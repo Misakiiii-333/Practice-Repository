@@ -1,4 +1,5 @@
 <?php
+//Solving Algorithm's homework(1) in a different way.
 
 function largest_pair($arr, $n) {
     $min = PHP_INT_MAX;
