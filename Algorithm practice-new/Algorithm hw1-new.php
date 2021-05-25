@@ -1,27 +1,33 @@
 <?php
-//Solving Algorithm's homework(1) in a different way.
+function findLargestSumPair($arr, $n) {
 
-function largest_pair($arr, $n) {
-    $max = PHP_INT_MAX;
-    $secondMax = PHP_INT_MAX;
-    for ($j = 0; $j < $n; $j++) {
-        if ($arr[$j] > $max) {
-            $secondMax = $max;
-            
-            $max = $arr[$j];
-        } else if (($arr[$j] > $secondMax) && $arr[$j] != $max) {
- 
-            //secondMin update
-            $secondMax = $arr[$j];
-        }
+    $max;
+    $secondMax;
+     
+    if ($arr[0] > $arr[1]) {
+        $max = $arr[0];
+        $secondMax = $arr[1];
+    } else {
+        $max = $arr[1];
+        $secondMax = $arr[0];
     }
-    // Return the sum of the minimum pair
-    return ($secondMax + $max);
+ 
+    for ( $i = 2; $i < $n; $i++) {
+
+        if ($arr[$i] > $max) {
+            $secondMax = $max;
+            $max = $arr[$i];
+        }else if ($arr[$i] >  $secondMax and $arr[$i] != $max) {
+            $secondMax = $arr[$i];
+        }
+    return ($max + $secondMax);
+    }
 }
  
-// Driver code
-$arr = array[0, 2, 1, 9, 7];
-$n = sizeof($arr);
-echo largest_pair($arr, $n);
+    // Driver Code
+    $arr = array(0, 2, 1, 9, 7);
+    $n = count($arr);
+    echo "Largest pair Sum :" 
+    findLargestSumPair($arr, $n);
  
 ?>
